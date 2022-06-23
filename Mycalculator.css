@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(240, 235, 235);
+}
+.container{
+    background-color: #3d4543;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: absolute;
+    top: 15%;
+    right: 38vw;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: -1px -1px 15px 5px white;
+}
+ #minus,#divide, #point{
+    font-weight: 700;
+}
+#display{
+    padding: 10px;
+    width: 260px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: larger;
+    background-color: #bccd95;
+}
+#equalbtn
+{
+    color: aliceblue;
+    background-color: rgb(232, 120, 0);
+    font-weight: 700;
+}
+#multi, #minus, #plus, #equalbtn{
+   margin-left: 5%;
+}
+.btn{
+    margin: 3%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 8%;
+    margin-left: 3.5%;
+}
+.btn:hover{
+    background-color: grey;
+    color: white;
+    font-weight: 500;
+}
+#equalbtn::after{
+    background-color: rgb(232, 120, 0);
+}
+@media only screen and (max-width: 1100px)
+{
+    .container
+    {
+        top: 8%;
+        right: 7.5%;
+        height: 500px;
+        padding-top: 50px;
+    }
+    .btn{
+        margin: 2%;
+        margin-top: 7%;
+        padding: 16px;
+    }
+    #display
+    {
+        width: 240px;
+        height: 40px;
+        margin-bottom: 12%;
+    }
+    #divide
+    {
+        margin-left: 10px;
+    }
+    .btn:hover{
+        background-color: grey;
+        color: white;
+        font-weight: 500;
+    }
+    #equalbtn::after{
+        background-color: rgb(232, 120, 0);
+    }
+}
+@media only screen and (max-width: 370px)
+{
+    .container{
+        right: 18px;
+    }
+    .btn:hover{
+        background-color: grey;
+        color: white;
+        font-weight: 500;
+    }
+    #equalbtn::after{
+        background-color: rgb(232, 120, 0);
+    }
+}
